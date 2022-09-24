@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Assignment - Film Finder</title>
+    <link rel="icon" href="./Images/Movie icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer type="text/javascript" src="scriptMovies.js"></script>
+    <script defer type="text/javascript" src="script.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <input type="search" id="searchInput" placeholder="Search movie..." />
+      <img
+        id="searchBtt"
+        src="./Images/Search icon.png"
+        alt="Click to search"
+      />
+      <h1>Film finder</h1>
+    </header>
+    <nav>
+      <div class="filterBtt">
+        <input type="radio" id="new" name="film-filter" value="new" />
+        <label>Latest movies, 2014 or newer</label>
+      </div>
+      <div class="filterBtt">
+        <input type="radio" id="avenger" name="film-filter" value="avenger" />
+        <label>Avenger movies</label>
+      </div>
+      <div class="filterBtt">
+        <input type="radio" id="xmen" name="film-filter" value="xmen" />
+        <label>X-Men movies</label>
+      </div>
+      <div class="filterBtt">
+        <input type="radio" id="princess" name="film-filter" value="princess" />
+        <label>Pricess movies</label>
+      </div>
+      <div class="filterBtt">
+        <input type="radio" id="batman" name="film-filter" value="batman" />
+        <label>Batman movies</label>
+      </div>
+      <div class="filterBtt">
+        <img id="resetBtt" src="./Images/Reset Icon.png" alt="Reset filters" />
+        <img
+          id="hoverResetBtt"
+          src="./Images/Reset Icon Hover.png"
+          alt="Reset filters"
+        />
+      </div>
+    </nav>
+    <div class="container">
+      <ul class="movies"></ul>
+    </div>
+    <footer>
+      <p>
+        <a href="https://www.imdb.com/" target="_blank">&copy; 2022 IMDB.com</a>
+      </p>
+    </footer>
+  </body>
+</html>
